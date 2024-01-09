@@ -13,6 +13,7 @@ import { DashboardHomeComponent } from './page/dashboard-home/dashboard-home.com
 import { DASHBOARD_ROUTES } from './dashboard.routing';
 import { MessageService } from 'primeng/api';
 import { CookieService } from 'ngx-cookie-service';
+import { ChartModule } from 'primeng/chart'
 
 
 
@@ -30,7 +31,8 @@ import { CookieService } from 'ngx-cookie-service';
     ButtonModule,
     ToolbarModule,
     CardModule,
-    ToastModule
+    ToastModule,
+    ChartModule
   ],
   providers: [MessageService, CookieService]
 })
