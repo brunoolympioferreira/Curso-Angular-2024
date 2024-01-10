@@ -14,6 +14,7 @@ import { DASHBOARD_ROUTES } from './dashboard.routing';
 import { MessageService } from 'primeng/api';
 import { CookieService } from 'ngx-cookie-service';
 import { ChartModule } from 'primeng/chart'
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -32,7 +33,9 @@ import { ChartModule } from 'primeng/chart'
     ToolbarModule,
     CardModule,
     ToastModule,
-    ChartModule
+    ChartModule,
+    //Shared,
+    SharedModule
   ],
   providers: [MessageService, CookieService]
 })
