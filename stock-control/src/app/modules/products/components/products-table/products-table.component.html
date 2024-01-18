@@ -82,7 +82,8 @@
                         <th>
                             <div class="flex justify-content-center">
                                 <p-button styleClass="p-button-info" icon="pi pi-plus" label="Adicionar"
-                                    pTooltip="Adicionar produto" tooltipPosition="top">
+                                    pTooltip="Adicionar produto" tooltipPosition="top"
+                                    (onClick)="handleProductEvent(addProductEvent)">
                                 </p-button>
                             </div>
                         </th>
@@ -100,9 +101,10 @@
                         </td>
                         <td>{{product?.category.name}}</td>
                         <td>
-                            <div class="justify-content-center gap-3 align-content-center align-items-center">
+                            <div class="flex justify-content-center gap-3 align-content-center align-items-center">
                                 <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-warning"
-                                    pTooltip="Editar produto" tooltipPosition="top">
+                                    pTooltip="Editar produto" tooltipPosition="top"
+                                    (click)="handleProductEvent(editProductEvent, product?.id)">
                                 </button>
                                 <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-danger"
                                     pTooltip="Remover produto" tooltipPosition="top">
