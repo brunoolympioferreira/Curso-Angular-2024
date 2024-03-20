@@ -1,5 +1,5 @@
 import { Component, OnInit, computed, inject } from '@angular/core';
-import { CommonModule, NgFor, NgIf, NgTemplateOutlet } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,9 +12,7 @@ import { Todo } from 'src/app/models/model/todo.model';
   selector: 'app-todo-card',
   standalone: true,
   imports: [
-    NgFor,
-    NgIf,
-    NgTemplateOutlet,
+    CommonModule,
     MatCardModule,
     MatButtonModule,
     MatIconModule,
